@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: black;
 }
 
 /* Stili per navbar */
@@ -126,7 +127,9 @@ body {
 .main-hero .position-relative {
   z-index: 2;
 }
+/* Fine hero */
 
+/* Match */
 .card-match {
   cursor: pointer;
   transition: 0.3s;
@@ -135,3 +138,72 @@ body {
 .card-match:hover {
   background-color: #1e1e1e;
 }
+
+.card-selected {
+  background-color: rgba(255, 255, 255, 0.2); /* Cambia il colore di cio che seleziono */
+  color: white; /* opzionale */
+}
+/* Fine match */
+
+/* Alert giovedi */
+.alert .btn-giov {
+  color: white;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.alert .btn-giov:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 123, 255, 0.5);
+}
+/* Fine evento giovedi */
+
+/* Icone social */
+.social-icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 20%;
+  background-color: rgba(255, 255, 255, 0.2); /* Sfondo semi-trasparente */
+  padding: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.4);
+}
+
+.social-svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Media query per responsività delle icone social */
+@media (max-width: 576px) {
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .social-icons-container {
+    gap: 15px;
+  }
+}
+/* Fine icone social */

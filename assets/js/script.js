@@ -94,7 +94,7 @@ matches.forEach((match, index) => {
 // Evidenzia la card selezionata
 function highlightCard(index) {
   document.querySelectorAll(".card-match").forEach((el, i) => {
-    el.classList.toggle("bg-primary", i === index);
+    el.classList.toggle("card-selected", i === index);
     el.classList.toggle("bg-secondary", i !== index);
   });
 }
@@ -141,3 +141,15 @@ function updateHero(match) {
 // Carica primo match di default
 updateHero(matches[0]);
 highlightCard(0);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const today = new Date().getDay();
+  
+  // Controlla se oggi è giovedì (giorno 4)
+  if (today === 4) {
+    // Seleziona il container e rimuovi la classe d-none per renderlo visibile, questa parte è importante, per fare test modificare il numero 4
+    const thursdayContainer = document.getElementById('thursday-container');
+    thursdayContainer.classList.remove('d-none');
+  }
+});
