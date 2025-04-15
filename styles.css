@@ -1,0 +1,137 @@
+/* Reset generale */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Stili per navbar */
+.navbar-nav {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* Spaziatura tra i link navbar */
+.navbar-nav .nav-link {
+  margin-right: 1rem; /* Spaziatura tra i link mi piace cosi */
+}
+
+/* "Home" in grassetto anche questo mi piace cosi*/
+.navbar-nav .nav-link.active {
+  font-weight: 700;
+}
+
+/* Pulsante "Join Us" stiloso deam */
+.navbar .btn-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navbar .btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 123, 255, 0.5);
+}
+
+.nav-item {
+  white-space: nowrap;
+}
+
+.logo-navbar {
+  width: 25%;
+  height: auto;
+}
+
+/* Stili per hero image */
+.hero-container {
+  position: relative;
+  height: 80vh; /* 80% dell'altezza della viewport */
+  width: 100%;
+  background-image: url('assets/img/slide1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero-text {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+/* Media queries per responsività */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-text {
+    font-size: 1rem;
+  }
+  
+  .hero-content {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  
+  .hero-container {
+    height: 60vh; /* Riduce l'altezza su mobile */
+  }
+}
+
+.main-hero {
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.main-hero .position-relative {
+  z-index: 2;
+}
+
+.card-match {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-match:hover {
+  background-color: #1e1e1e;
+}
