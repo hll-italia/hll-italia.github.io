@@ -1,5 +1,3 @@
-console.log("Script JS caricato!");
-
 // Animazioni e navbar
 document.addEventListener('DOMContentLoaded', function () {
   const heroContent = document.querySelector('.hero-content');
@@ -29,8 +27,8 @@ const matches = [
     title: "ITHL - TEAM1",
     team1: "ITHL",
     team2: "TEAM1",
-    logo1: "logo-ita.jpg",
-    logo2: "logo-ita.jpg",
+    logo1: "assets/img/logo-ita.jpg",
+    logo2: "assets/img/logo-ita.jpg",
     date: "2025-04-17T20:00:00",
     bg: "assets/img/slide4.jpg"
   },
@@ -38,8 +36,8 @@ const matches = [
     title: "ITHL - TEAM2",
     team1: "ITHL",
     team2: "TEAM2",
-    logo1: "logo-ita.jpg",
-    logo2: "logo-ita.jpg",
+    logo1: "assets/img/logo-ita.jpg",
+    logo2: "assets/img/logo-ita.jpg",
     date: "2025-04-19T17:00:00",
     bg: "assets/img/slide3.jpg"
   },
@@ -47,8 +45,8 @@ const matches = [
     title: "ITHL - TEAM3",
     team1: "ITHL",
     team2: "TEAM3",
-    logo1: "logo-ita.jpg",
-    logo2: "logo-ita.jpg",
+    logo1: "assets/img/logo-ita.jpg",
+    logo2: "assets/img/logo-ita.jpg",
     date: "2025-04-25T20:00:00",
     bg: "assets/img/slide2.jpg"
   }

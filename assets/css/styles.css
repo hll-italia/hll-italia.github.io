@@ -51,7 +51,7 @@ body {
   position: relative;
   height: 80vh; /* 80% dell'altezza della viewport */
   width: 100%;
-  background-image: url('assets/img/slide1.jpg');
+  background-image: url('../img/slide1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
